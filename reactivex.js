@@ -15,40 +15,40 @@ For each video, add a projected {id, title} pair to the videoAndTitlePairs array
 
 function() {
   var newReleases = [
-      {
-        "id": 70111470,
-        "title": "Die Hard",
-        "boxart": "http://cdn-0.nflximg.com/images/2891/DieHard.jpg",
-        "uri": "http://api.netflix.com/catalog/titles/movies/70111470",
-        "rating": [4.0],
-        "bookmark": []
-      },
-      {
-        "id": 654356453,
-        "title": "Bad Boys",
-        "boxart": "http://cdn-0.nflximg.com/images/2891/BadBoys.jpg",
-        "uri": "http://api.netflix.com/catalog/titles/movies/70111470",
-        "rating": [5.0],
-        "bookmark": [{ id:432534, time:65876586 }]
-      },
-      {
-        "id": 65432445,
-        "title": "The Chamber",
-        "boxart": "http://cdn-0.nflximg.com/images/2891/TheChamber.jpg",
-        "uri": "http://api.netflix.com/catalog/titles/movies/70111470",
-        "rating": [4.0],
-        "bookmark": []
-      },
-      {
-        "id": 675465,
-        "title": "Fracture",
-        "boxart": "http://cdn-0.nflximg.com/images/2891/Fracture.jpg",
-        "uri": "http://api.netflix.com/catalog/titles/movies/70111470",
-        "rating": [5.0],
-        "bookmark": [{ id:432534, time:65876586 }]
-      }
-    ],
-    videoAndTitlePairs = [];
+  {
+    "id": 70111470,
+    "title": "Die Hard",
+    "boxart": "http://cdn-0.nflximg.com/images/2891/DieHard.jpg",
+    "uri": "http://api.netflix.com/catalog/titles/movies/70111470",
+    "rating": [4.0],
+    "bookmark": []
+  },
+  {
+    "id": 654356453,
+    "title": "Bad Boys",
+    "boxart": "http://cdn-0.nflximg.com/images/2891/BadBoys.jpg",
+    "uri": "http://api.netflix.com/catalog/titles/movies/70111470",
+    "rating": [5.0],
+    "bookmark": [{ id:432534, time:65876586 }]
+  },
+  {
+    "id": 65432445,
+    "title": "The Chamber",
+    "boxart": "http://cdn-0.nflximg.com/images/2891/TheChamber.jpg",
+    "uri": "http://api.netflix.com/catalog/titles/movies/70111470",
+    "rating": [4.0],
+    "bookmark": []
+  },
+  {
+    "id": 675465,
+    "title": "Fracture",
+    "boxart": "http://cdn-0.nflximg.com/images/2891/Fracture.jpg",
+    "uri": "http://api.netflix.com/catalog/titles/movies/70111470",
+    "rating": [5.0],
+    "bookmark": [{ id:432534, time:65876586 }]
+  }
+  ],
+  videoAndTitlePairs = [];
 
   newReleases.forEach(function(item) {
     videoAndTitlePairs.push({id: item.id, title: item.title});
@@ -100,38 +100,38 @@ newReleases array, but this time we'll use our map function.
 
 function() {
   var newReleases = [
-    {
-      "id": 70111470,
-      "title": "Die Hard",
-      "boxart": "http://cdn-0.nflximg.com/images/2891/DieHard.jpg",
-      "uri": "http://api.netflix.com/catalog/titles/movies/70111470",
-      "rating": [4.0],
-      "bookmark": []
-    },
-    {
-      "id": 654356453,
-      "title": "Bad Boys",
-      "boxart": "http://cdn-0.nflximg.com/images/2891/BadBoys.jpg",
-      "uri": "http://api.netflix.com/catalog/titles/movies/70111470",
-      "rating": [5.0],
-      "bookmark": [{ id:432534, time:65876586 }]
-    },
-    {
-      "id": 65432445,
-      "title": "The Chamber",
-      "boxart": "http://cdn-0.nflximg.com/images/2891/TheChamber.jpg",
-      "uri": "http://api.netflix.com/catalog/titles/movies/70111470",
-      "rating": [4.0],
-      "bookmark": []
-    },
-    {
-      "id": 675465,
-      "title": "Fracture",
-      "boxart": "http://cdn-0.nflximg.com/images/2891/Fracture.jpg",
-      "uri": "http://api.netflix.com/catalog/titles/movies/70111470",
-      "rating": [5.0],
-      "bookmark": [{ id:432534, time:65876586 }]
-    }
+  {
+    "id": 70111470,
+    "title": "Die Hard",
+    "boxart": "http://cdn-0.nflximg.com/images/2891/DieHard.jpg",
+    "uri": "http://api.netflix.com/catalog/titles/movies/70111470",
+    "rating": [4.0],
+    "bookmark": []
+  },
+  {
+    "id": 654356453,
+    "title": "Bad Boys",
+    "boxart": "http://cdn-0.nflximg.com/images/2891/BadBoys.jpg",
+    "uri": "http://api.netflix.com/catalog/titles/movies/70111470",
+    "rating": [5.0],
+    "bookmark": [{ id:432534, time:65876586 }]
+  },
+  {
+    "id": 65432445,
+    "title": "The Chamber",
+    "boxart": "http://cdn-0.nflximg.com/images/2891/TheChamber.jpg",
+    "uri": "http://api.netflix.com/catalog/titles/movies/70111470",
+    "rating": [4.0],
+    "bookmark": []
+  },
+  {
+    "id": 675465,
+    "title": "Fracture",
+    "boxart": "http://cdn-0.nflximg.com/images/2891/Fracture.jpg",
+    "uri": "http://api.netflix.com/catalog/titles/movies/70111470",
+    "rating": [5.0],
+    "bookmark": [{ id:432534, time:65876586 }]
+  }
   ];
 
   // ------------ INSERT CODE HERE! -----------------------------------
@@ -157,42 +157,42 @@ Exercise 6: Use forEach() to collect only those videos with a rating of 5.0
 Use forEach() to loop through the videos in the newReleases array and,
 if a video has a rating of 5.0, add it to the videos array.
 
-*/
+  */
 
 function() {
   var newReleases = [
-    {
-      "id": 70111470,
-      "title": "Die Hard",
-      "boxart": "http://cdn-0.nflximg.com/images/2891/DieHard.jpg",
-      "uri": "http://api.netflix.com/catalog/titles/movies/70111470",
-      "rating": 4.0,
-      "bookmark": []
-    },
-    {
-      "id": 654356453,
-      "title": "Bad Boys",
-      "boxart": "http://cdn-0.nflximg.com/images/2891/BadBoys.jpg",
-      "uri": "http://api.netflix.com/catalog/titles/movies/70111470",
-      "rating": 5.0,
-      "bookmark": [{ id:432534, time:65876586 }]
-    },
-    {
-      "id": 65432445,
-      "title": "The Chamber",
-      "boxart": "http://cdn-0.nflximg.com/images/2891/TheChamber.jpg",
-      "uri": "http://api.netflix.com/catalog/titles/movies/70111470",
-      "rating": 4.0,
-      "bookmark": []
-    },
-    {
-      "id": 675465,
-      "title": "Fracture",
-      "boxart": "http://cdn-0.nflximg.com/images/2891/Fracture.jpg",
-      "uri": "http://api.netflix.com/catalog/titles/movies/70111470",
-      "rating": 5.0,
-      "bookmark": [{ id:432534, time:65876586 }]
-    }
+  {
+    "id": 70111470,
+    "title": "Die Hard",
+    "boxart": "http://cdn-0.nflximg.com/images/2891/DieHard.jpg",
+    "uri": "http://api.netflix.com/catalog/titles/movies/70111470",
+    "rating": 4.0,
+    "bookmark": []
+  },
+  {
+    "id": 654356453,
+    "title": "Bad Boys",
+    "boxart": "http://cdn-0.nflximg.com/images/2891/BadBoys.jpg",
+    "uri": "http://api.netflix.com/catalog/titles/movies/70111470",
+    "rating": 5.0,
+    "bookmark": [{ id:432534, time:65876586 }]
+  },
+  {
+    "id": 65432445,
+    "title": "The Chamber",
+    "boxart": "http://cdn-0.nflximg.com/images/2891/TheChamber.jpg",
+    "uri": "http://api.netflix.com/catalog/titles/movies/70111470",
+    "rating": 4.0,
+    "bookmark": []
+  },
+  {
+    "id": 675465,
+    "title": "Fracture",
+    "boxart": "http://cdn-0.nflximg.com/images/2891/Fracture.jpg",
+    "uri": "http://api.netflix.com/catalog/titles/movies/70111470",
+    "rating": 5.0,
+    "bookmark": [{ id:432534, time:65876586 }]
+  }
   ],
   videos = [];
 
@@ -255,38 +255,38 @@ Exercise 8: Chain filter and map to collect the ids of videos that have a rating
 
 function() {
   var newReleases = [
-    {
-      "id": 70111470,
-      "title": "Die Hard",
-      "boxart": "http://cdn-0.nflximg.com/images/2891/DieHard.jpg",
-      "uri": "http://api.netflix.com/catalog/titles/movies/70111470",
-      "rating": 4.0,
-      "bookmark": []
-    },
-    {
-      "id": 654356453,
-      "title": "Bad Boys",
-      "boxart": "http://cdn-0.nflximg.com/images/2891/BadBoys.jpg",
-      "uri": "http://api.netflix.com/catalog/titles/movies/70111470",
-      "rating": 5.0,
-      "bookmark": [{ id:432534, time:65876586 }]
-    },
-    {
-      "id": 65432445,
-      "title": "The Chamber",
-      "boxart": "http://cdn-0.nflximg.com/images/2891/TheChamber.jpg",
-      "uri": "http://api.netflix.com/catalog/titles/movies/70111470",
-      "rating": 4.0,
-      "bookmark": []
-    },
-    {
-      "id": 675465,
-      "title": "Fracture",
-      "boxart": "http://cdn-0.nflximg.com/images/2891/Fracture.jpg",
-      "uri": "http://api.netflix.com/catalog/titles/movies/70111470",
-      "rating": 5.0,
-      "bookmark": [{ id:432534, time:65876586 }]
-    }
+  {
+    "id": 70111470,
+    "title": "Die Hard",
+    "boxart": "http://cdn-0.nflximg.com/images/2891/DieHard.jpg",
+    "uri": "http://api.netflix.com/catalog/titles/movies/70111470",
+    "rating": 4.0,
+    "bookmark": []
+  },
+  {
+    "id": 654356453,
+    "title": "Bad Boys",
+    "boxart": "http://cdn-0.nflximg.com/images/2891/BadBoys.jpg",
+    "uri": "http://api.netflix.com/catalog/titles/movies/70111470",
+    "rating": 5.0,
+    "bookmark": [{ id:432534, time:65876586 }]
+  },
+  {
+    "id": 65432445,
+    "title": "The Chamber",
+    "boxart": "http://cdn-0.nflximg.com/images/2891/TheChamber.jpg",
+    "uri": "http://api.netflix.com/catalog/titles/movies/70111470",
+    "rating": 4.0,
+    "bookmark": []
+  },
+  {
+    "id": 675465,
+    "title": "Fracture",
+    "boxart": "http://cdn-0.nflximg.com/images/2891/Fracture.jpg",
+    "uri": "http://api.netflix.com/catalog/titles/movies/70111470",
+    "rating": 5.0,
+    "bookmark": [{ id:432534, time:65876586 }]
+  }
   ];
 
   // ------------ INSERT CODE HERE! -----------------------------------
@@ -294,12 +294,12 @@ function() {
   // with a rating of 5.0.
 
   return newReleases.
-    filter(function(item) {
-      return item.rating === 5.0;
-    }).
-    map(function(item) {
-      return item.id;
-    });
+  filter(function(item) {
+    return item.rating === 5.0;
+  }).
+  map(function(item) {
+    return item.id;
+  });
 
 }
 
@@ -325,48 +325,48 @@ Let's start by using two nested forEach loops to collect the id of every video i
 
 function() {
   var movieLists = [
+  {
+    name: "New Releases",
+    videos: [
     {
-      name: "New Releases",
-      videos: [
-        {
-          "id": 70111470,
-          "title": "Die Hard",
-          "boxart": "http://cdn-0.nflximg.com/images/2891/DieHard.jpg",
-          "uri": "http://api.netflix.com/catalog/titles/movies/70111470",
-          "rating": 4.0,
-          "bookmark": []
-        },
-        {
-          "id": 654356453,
-          "title": "Bad Boys",
-          "boxart": "http://cdn-0.nflximg.com/images/2891/BadBoys.jpg",
-          "uri": "http://api.netflix.com/catalog/titles/movies/70111470",
-          "rating": 5.0,
-          "bookmark": [{ id:432534, time:65876586 }]
-        }
-      ]
+      "id": 70111470,
+      "title": "Die Hard",
+      "boxart": "http://cdn-0.nflximg.com/images/2891/DieHard.jpg",
+      "uri": "http://api.netflix.com/catalog/titles/movies/70111470",
+      "rating": 4.0,
+      "bookmark": []
     },
     {
-      name: "Dramas",
-      videos: [
-        {
-          "id": 65432445,
-          "title": "The Chamber",
-          "boxart": "http://cdn-0.nflximg.com/images/2891/TheChamber.jpg",
-          "uri": "http://api.netflix.com/catalog/titles/movies/70111470",
-          "rating": 4.0,
-          "bookmark": []
-        },
-        {
-          "id": 675465,
-          "title": "Fracture",
-          "boxart": "http://cdn-0.nflximg.com/images/2891/Fracture.jpg",
-          "uri": "http://api.netflix.com/catalog/titles/movies/70111470",
-          "rating": 5.0,
-          "bookmark": [{ id:432534, time:65876586 }]
-        }
-      ]
+      "id": 654356453,
+      "title": "Bad Boys",
+      "boxart": "http://cdn-0.nflximg.com/images/2891/BadBoys.jpg",
+      "uri": "http://api.netflix.com/catalog/titles/movies/70111470",
+      "rating": 5.0,
+      "bookmark": [{ id:432534, time:65876586 }]
     }
+    ]
+  },
+  {
+    name: "Dramas",
+    videos: [
+    {
+      "id": 65432445,
+      "title": "The Chamber",
+      "boxart": "http://cdn-0.nflximg.com/images/2891/TheChamber.jpg",
+      "uri": "http://api.netflix.com/catalog/titles/movies/70111470",
+      "rating": 4.0,
+      "bookmark": []
+    },
+    {
+      "id": 675465,
+      "title": "Fracture",
+      "boxart": "http://cdn-0.nflximg.com/images/2891/Fracture.jpg",
+      "uri": "http://api.netflix.com/catalog/titles/movies/70111470",
+      "rating": 5.0,
+      "bookmark": [{ id:432534, time:65876586 }]
+    }
+    ]
+  }
   ],
   allVideoIdsInMovieLists = [];
 
@@ -432,49 +432,49 @@ Hint: use two nested calls to map() and one call to concatAll().
 
 function() {
   var movieLists = [
-      {
-        name: "New Releases",
-        videos: [
-          {
-            "id": 70111470,
-            "title": "Die Hard",
-            "boxart": "http://cdn-0.nflximg.com/images/2891/DieHard.jpg",
-            "uri": "http://api.netflix.com/catalog/titles/movies/70111470",
-            "rating": 4.0,
-            "bookmark": []
-          },
-          {
-            "id": 654356453,
-            "title": "Bad Boys",
-            "boxart": "http://cdn-0.nflximg.com/images/2891/BadBoys.jpg",
-            "uri": "http://api.netflix.com/catalog/titles/movies/70111470",
-            "rating": 5.0,
-            "bookmark": [{ id:432534, time:65876586 }]
-          }
-        ]
-      },
-      {
-        name: "Dramas",
-        videos: [
-          {
-            "id": 65432445,
-            "title": "The Chamber",
-            "boxart": "http://cdn-0.nflximg.com/images/2891/TheChamber.jpg",
-            "uri": "http://api.netflix.com/catalog/titles/movies/70111470",
-            "rating": 4.0,
-            "bookmark": []
-          },
-          {
-            "id": 675465,
-            "title": "Fracture",
-            "boxart": "http://cdn-0.nflximg.com/images/2891/Fracture.jpg",
-            "uri": "http://api.netflix.com/catalog/titles/movies/70111470",
-            "rating": 5.0,
-            "bookmark": [{ id:432534, time:65876586 }]
-          }
-        ]
-      }
-    ];
+  {
+    name: "New Releases",
+    videos: [
+    {
+      "id": 70111470,
+      "title": "Die Hard",
+      "boxart": "http://cdn-0.nflximg.com/images/2891/DieHard.jpg",
+      "uri": "http://api.netflix.com/catalog/titles/movies/70111470",
+      "rating": 4.0,
+      "bookmark": []
+    },
+    {
+      "id": 654356453,
+      "title": "Bad Boys",
+      "boxart": "http://cdn-0.nflximg.com/images/2891/BadBoys.jpg",
+      "uri": "http://api.netflix.com/catalog/titles/movies/70111470",
+      "rating": 5.0,
+      "bookmark": [{ id:432534, time:65876586 }]
+    }
+    ]
+  },
+  {
+    name: "Dramas",
+    videos: [
+    {
+      "id": 65432445,
+      "title": "The Chamber",
+      "boxart": "http://cdn-0.nflximg.com/images/2891/TheChamber.jpg",
+      "uri": "http://api.netflix.com/catalog/titles/movies/70111470",
+      "rating": 4.0,
+      "bookmark": []
+    },
+    {
+      "id": 675465,
+      "title": "Fracture",
+      "boxart": "http://cdn-0.nflximg.com/images/2891/Fracture.jpg",
+      "uri": "http://api.netflix.com/catalog/titles/movies/70111470",
+      "rating": 5.0,
+      "bookmark": [{ id:432534, time:65876586 }]
+    }
+    ]
+  }
+  ];
 
 
 
@@ -505,63 +505,63 @@ Furthermore, you're not allowed to use indexers in any of the remaining exercise
 
 function() {
   var movieLists = [
-      {
-        name: "Instant Queue",
-        videos : [
-          {
-            "id": 70111470,
-            "title": "Die Hard",
-            "boxarts": [
-              { width: 150, height:200, url:"http://cdn-0.nflximg.com/images/2891/DieHard150.jpg" },
-              { width: 200, height:200, url:"http://cdn-0.nflximg.com/images/2891/DieHard200.jpg" }
-            ],
-            "url": "http://api.netflix.com/catalog/titles/movies/70111470",
-            "rating": 4.0,
-            "bookmark": []
-          },
-          {
-            "id": 654356453,
-            "title": "Bad Boys",
-            "boxarts": [
-              { width: 200, height:200, url:"http://cdn-0.nflximg.com/images/2891/BadBoys200.jpg" },
-              { width: 150, height:200, url:"http://cdn-0.nflximg.com/images/2891/BadBoys150.jpg" }
+  {
+    name: "Instant Queue",
+    videos : [
+    {
+      "id": 70111470,
+      "title": "Die Hard",
+      "boxarts": [
+      { width: 150, height:200, url:"http://cdn-0.nflximg.com/images/2891/DieHard150.jpg" },
+      { width: 200, height:200, url:"http://cdn-0.nflximg.com/images/2891/DieHard200.jpg" }
+      ],
+      "url": "http://api.netflix.com/catalog/titles/movies/70111470",
+      "rating": 4.0,
+      "bookmark": []
+    },
+    {
+      "id": 654356453,
+      "title": "Bad Boys",
+      "boxarts": [
+      { width: 200, height:200, url:"http://cdn-0.nflximg.com/images/2891/BadBoys200.jpg" },
+      { width: 150, height:200, url:"http://cdn-0.nflximg.com/images/2891/BadBoys150.jpg" }
 
-            ],
-            "url": "http://api.netflix.com/catalog/titles/movies/70111470",
-            "rating": 5.0,
-            "bookmark": [{ id:432534, time:65876586 }]
-          }
-        ]
-      },
-      {
-        name: "New Releases",
-        videos: [
-          {
-            "id": 65432445,
-            "title": "The Chamber",
-            "boxarts": [
-              { width: 150, height:200, url:"http://cdn-0.nflximg.com/images/2891/TheChamber150.jpg" },
-              { width: 200, height:200, url:"http://cdn-0.nflximg.com/images/2891/TheChamber200.jpg" }
-            ],
-            "url": "http://api.netflix.com/catalog/titles/movies/70111470",
-            "rating": 4.0,
-            "bookmark": []
-          },
-          {
-            "id": 675465,
-            "title": "Fracture",
-            "boxarts": [
-              { width: 200, height:200, url:"http://cdn-0.nflximg.com/images/2891/Fracture200.jpg" },
-              { width: 150, height:200, url:"http://cdn-0.nflximg.com/images/2891/Fracture150.jpg" },
-              { width: 300, height:200, url:"http://cdn-0.nflximg.com/images/2891/Fracture300.jpg" }
-            ],
-            "url": "http://api.netflix.com/catalog/titles/movies/70111470",
-            "rating": 5.0,
-            "bookmark": [{ id:432534, time:65876586 }]
-          }
-        ]
-      }
-    ];
+      ],
+      "url": "http://api.netflix.com/catalog/titles/movies/70111470",
+      "rating": 5.0,
+      "bookmark": [{ id:432534, time:65876586 }]
+    }
+    ]
+  },
+  {
+    name: "New Releases",
+    videos: [
+    {
+      "id": 65432445,
+      "title": "The Chamber",
+      "boxarts": [
+      { width: 150, height:200, url:"http://cdn-0.nflximg.com/images/2891/TheChamber150.jpg" },
+      { width: 200, height:200, url:"http://cdn-0.nflximg.com/images/2891/TheChamber200.jpg" }
+      ],
+      "url": "http://api.netflix.com/catalog/titles/movies/70111470",
+      "rating": 4.0,
+      "bookmark": []
+    },
+    {
+      "id": 675465,
+      "title": "Fracture",
+      "boxarts": [
+      { width: 200, height:200, url:"http://cdn-0.nflximg.com/images/2891/Fracture200.jpg" },
+      { width: 150, height:200, url:"http://cdn-0.nflximg.com/images/2891/Fracture150.jpg" },
+      { width: 300, height:200, url:"http://cdn-0.nflximg.com/images/2891/Fracture300.jpg" }
+      ],
+      "url": "http://api.netflix.com/catalog/titles/movies/70111470",
+      "rating": 5.0,
+      "bookmark": [{ id:432534, time:65876586 }]
+    }
+    ]
+  }
+  ];
 
 
   // Use one or more map, concatAll, and filter calls to create an array with the following items
@@ -594,8 +594,8 @@ Nearly every time we flatten a tree we chain map() and concatAll(). Sometimes, i
 
 Array.prototype.concatMap = function(projectionFunctionThatReturnsArray) {
   return this.
-    map(function(item) {
-      return projectionFunctionThatReturnsArray(item);
+  map(function(item) {
+    return projectionFunctionThatReturnsArray(item);
       // ------------   INSERT CODE HERE!  ----------------------------
       // Apply the projection function to each item. The projection
       // function will return an new child array. This will create a
@@ -604,7 +604,7 @@ Array.prototype.concatMap = function(projectionFunctionThatReturnsArray) {
     }).
     // apply the concatAll function to flatten the two-dimensional array
     concatAll();
-};
+  };
 
 /*
   var spanishFrenchEnglishWords = [ ["cero","rien","zero"], ["uno","un","one"], ["dos","deux","two"] ];
@@ -615,7 +615,7 @@ Array.prototype.concatMap = function(projectionFunctionThatReturnsArray) {
     });
 
   return JSON.stringify(allWords) === '["cero","rien","zero","uno","un","one","dos","deux","two"]';
-*/
+  */
 
 /*
 
@@ -629,63 +629,63 @@ Let's repeat the exercise we just performed. However this time we'll simplify th
 
 function() {
   var movieLists = [
-      {
-        name: "Instant Queue",
-        videos : [
-          {
-            "id": 70111470,
-            "title": "Die Hard",
-            "boxarts": [
-              { width: 150, height:200, url:"http://cdn-0.nflximg.com/images/2891/DieHard150.jpg" },
-              { width: 200, height:200, url:"http://cdn-0.nflximg.com/images/2891/DieHard200.jpg" }
-            ],
-            "url": "http://api.netflix.com/catalog/titles/movies/70111470",
-            "rating": 4.0,
-            "bookmark": []
-          },
-          {
-            "id": 654356453,
-            "title": "Bad Boys",
-            "boxarts": [
-              { width: 200, height:200, url:"http://cdn-0.nflximg.com/images/2891/BadBoys200.jpg" },
-              { width: 150, height:200, url:"http://cdn-0.nflximg.com/images/2891/BadBoys150.jpg" }
+  {
+    name: "Instant Queue",
+    videos : [
+    {
+      "id": 70111470,
+      "title": "Die Hard",
+      "boxarts": [
+      { width: 150, height:200, url:"http://cdn-0.nflximg.com/images/2891/DieHard150.jpg" },
+      { width: 200, height:200, url:"http://cdn-0.nflximg.com/images/2891/DieHard200.jpg" }
+      ],
+      "url": "http://api.netflix.com/catalog/titles/movies/70111470",
+      "rating": 4.0,
+      "bookmark": []
+    },
+    {
+      "id": 654356453,
+      "title": "Bad Boys",
+      "boxarts": [
+      { width: 200, height:200, url:"http://cdn-0.nflximg.com/images/2891/BadBoys200.jpg" },
+      { width: 150, height:200, url:"http://cdn-0.nflximg.com/images/2891/BadBoys150.jpg" }
 
-            ],
-            "url": "http://api.netflix.com/catalog/titles/movies/70111470",
-            "rating": 5.0,
-            "bookmark": [{ id:432534, time:65876586 }]
-          }
-        ]
-      },
-      {
-        name: "New Releases",
-        videos: [
-          {
-            "id": 65432445,
-            "title": "The Chamber",
-            "boxarts": [
-              { width: 150, height:200, url:"http://cdn-0.nflximg.com/images/2891/TheChamber150.jpg" },
-              { width: 200, height:200, url:"http://cdn-0.nflximg.com/images/2891/TheChamber200.jpg" }
-            ],
-            "url": "http://api.netflix.com/catalog/titles/movies/70111470",
-            "rating": 4.0,
-            "bookmark": []
-          },
-          {
-            "id": 675465,
-            "title": "Fracture",
-            "boxarts": [
-              { width: 200, height:200, url:"http://cdn-0.nflximg.com/images/2891/Fracture200.jpg" },
-              { width: 150, height:200, url:"http://cdn-0.nflximg.com/images/2891/Fracture150.jpg" },
-              { width: 300, height:200, url:"http://cdn-0.nflximg.com/images/2891/Fracture300.jpg" }
-            ],
-            "url": "http://api.netflix.com/catalog/titles/movies/70111470",
-            "rating": 5.0,
-            "bookmark": [{ id:432534, time:65876586 }]
-          }
-        ]
-      }
-    ];
+      ],
+      "url": "http://api.netflix.com/catalog/titles/movies/70111470",
+      "rating": 5.0,
+      "bookmark": [{ id:432534, time:65876586 }]
+    }
+    ]
+  },
+  {
+    name: "New Releases",
+    videos: [
+    {
+      "id": 65432445,
+      "title": "The Chamber",
+      "boxarts": [
+      { width: 150, height:200, url:"http://cdn-0.nflximg.com/images/2891/TheChamber150.jpg" },
+      { width: 200, height:200, url:"http://cdn-0.nflximg.com/images/2891/TheChamber200.jpg" }
+      ],
+      "url": "http://api.netflix.com/catalog/titles/movies/70111470",
+      "rating": 4.0,
+      "bookmark": []
+    },
+    {
+      "id": 675465,
+      "title": "Fracture",
+      "boxarts": [
+      { width: 200, height:200, url:"http://cdn-0.nflximg.com/images/2891/Fracture200.jpg" },
+      { width: 150, height:200, url:"http://cdn-0.nflximg.com/images/2891/Fracture150.jpg" },
+      { width: 300, height:200, url:"http://cdn-0.nflximg.com/images/2891/Fracture300.jpg" }
+      ],
+      "url": "http://api.netflix.com/catalog/titles/movies/70111470",
+      "rating": 5.0,
+      "bookmark": [{ id:432534, time:65876586 }]
+    }
+    ]
+  }
+  ];
 
 
   // Use one or more concatMap, map, and filter calls to create an array with the following items
@@ -708,6 +708,144 @@ function() {
 
 }
 
+/*
+
+Reducing Arrays
+Sometimes we need to perform an operation on more than one item in the array at the same time. For example, let's say we need to find the largest integer in an array. We can't use a filter() operation, because it only examines one item at a time. To find the largest integer we need to compare items in the array to each other.
+
+One approach could be to select an item in the array as the assumed largest number (perhaps the first item), and then compare that value to every other item in the array. Each time we come across a number that was larger than our assumed largest number, we'd replace it with the larger value, and continue the process until the entire array was traversed.
+
+If we replaced the specific size comparison with a closure, we could write a function that handled the array traversal process for us. At each step our function would apply the closure to the last value and the current value and use the result as the last value the next time. Finally we'd be left with only one value. This process is known as reducing because we reduce many values to a single value.
+
+Exercise 15: Use forEach to find the largest box art
+
+In this example we use forEach to find the largest box art. Each time we examine a new boxart we update a variable with the currently known maximumSize. If the boxart is smaller than the maximum size, we discard it. If it's larger, we keep track of it. Finally we're left with a single boxart which must necessarily be the largest.
+
+*/
+
+function() {
+  var boxarts = [
+  { width: 200, height:200, url:"http://cdn-0.nflximg.com/images/2891/Fracture200.jpg" },
+  { width: 150, height:200, url:"http://cdn-0.nflximg.com/images/2891/Fracture150.jpg" },
+  { width: 300, height:200, url:"http://cdn-0.nflximg.com/images/2891/Fracture300.jpg" },
+  { width: 425, height:150, url:"http://cdn-0.nflximg.com/images/2891/Fracture425.jpg" }
+  ],
+  currentSize,
+  maxSize = -1,
+  largestBoxart;
+
+  boxarts.forEach(function(boxart) {
+    currentSize = boxart.width * boxart.height;
+    if (currentSize > maxSize) {
+      largestBoxart = boxart;
+      maxSize = currentSize;
+    }
+  });
+
+  return largestBoxart;
+}
+
+/*
+
+This process is a reduction because we're using the information we derived from the last computation to calculate the current value. However in the example above, we still have to specify the method of traversal. Wouldn't it be nice if we could just specify what operation we wanted to perform on the last and current value? Let's create a helper function to perform reductions on arrays.
+
+Exercise 16: Implement reduce()
+
+Let's add a reduce() function to the Array type. Like map. Take note this is different from the reduce in ES5, which returns an value instead of an Array!
+
+*/
+
+// [1,2,3].reduce(function(accumulatedValue, currentValue) { return accumulatedValue + currentValue; }); === [6];
+// [1,2,3].reduce(function(accumulatedValue, currentValue) { return accumulatedValue + currentValue; }, 10); === [16];
+
+Array.prototype.reduce = function(combiner, initialValue) {
+  var counter,
+  accumulatedValue;
+
+  // If the array is empty, do nothing
+  if (this.length === 0) {
+    return this;
+  }
+  else {
+    // If the user didn't pass an initial value, use the first item.
+    if (arguments.length === 1) {
+      counter = 1;
+      accumulatedValue = this[0];
+    }
+    else if (arguments.length >= 2) {
+      counter = 0;
+      accumulatedValue = initialValue;
+    }
+    else {
+      throw "Invalid arguments.";
+    }
+
+    // Loop through the array, feeding the current value and the result of
+    // the previous computation back into the combiner function until
+    // we've exhausted the entire array and are left with only one value.
+    while(counter < this.length) {
+      accumulatedValue = combiner(accumulatedValue, this[counter])
+      counter++;
+    }
+
+    return [accumulatedValue];
+  }
+};
+
+/*
+
+Exercise 17: Retrieve the largest rating.
+
+Let's use our new reduce function to isolate the largest value in an array of ratings.
+
+*/
+
+function() {
+  var ratings = [2,3,1,4,5];
+
+  // You should return an array containing only the largest rating. Remember that reduce always
+  // returns an array with one item.
+  return ratings.
+    reduce(function(accumulator, currentElem) {
+      if (accumulator > currentElem) {
+        return accumulator;
+      } else {
+        return currentElem;
+      }
+    });
+}
+
+/*
+
+Nice work. Now let's try combining reduce() with our other functions to build more complex queries.
+
+Exercise 18: Retrieve url of the largest boxart
+
+Let's try combining reduce() with map() to reduce multiple boxart objects to a single value: the url of the largest box art.
+
+*/
+
+function() {
+  var boxarts = [
+      { width: 200, height:200, url:"http://cdn-0.nflximg.com/images/2891/Fracture200.jpg" },
+      { width: 150, height:200, url:"http://cdn-0.nflximg.com/images/2891/Fracture150.jpg" },
+      { width: 300, height:200, url:"http://cdn-0.nflximg.com/images/2891/Fracture300.jpg" },
+      { width: 425, height:150, url:"http://cdn-0.nflximg.com/images/2891/Fracture425.jpg" }
+    ];
+
+  // You should return an array containing only the URL of the largest box art. Remember that reduce always
+  // returns an array with one item.
+  return boxarts.
+    reduce(function(accumulator, currentElem) {
+      if (accumulator > currentElem) {
+        return accumulator;
+      } else {
+        return currentElem;
+      }
+    }).map(function(boxart){
+      return boxart.width * boxart.height;
+    });   // Complete this expression
+} // This gets me the largest number, but not the URL
 
 
 
