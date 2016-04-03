@@ -837,15 +837,15 @@ function() {
   // returns an array with one item.
   return boxarts.
     reduce(function(accumulator, currentElem) {
-      if (accumulator > currentElem) {
+      if (accumulator.width * accumulator.height > currentElem.width * currentElem.height) {
         return accumulator;
       } else {
         return currentElem;
       }
-    }).map(function(boxart){
-      return boxart.width * boxart.height;
+    }).map(function(boxart){ // once reduce completes, .map() is run to get the boxart url from the reduced object
+      return boxart.url;
     });   // Complete this expression
-} // This gets me the largest number, but not the URL
+}
 
 
 
