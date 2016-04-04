@@ -917,62 +917,62 @@ filter() to retrieve the smallest box art in the boxarts array.
 
 function() {
   var movieLists = [
+  {
+    name: "New Releases",
+    videos: [
     {
-      name: "New Releases",
-      videos: [
-        {
-          "id": 70111470,
-          "title": "Die Hard",
-          "boxarts": [
-            { width: 150, height:200, url:"http://cdn-0.nflximg.com/images/2891/DieHard150.jpg" },
-            { width: 200, height:200, url:"http://cdn-0.nflximg.com/images/2891/DieHard200.jpg" }
-          ],
-          "url": "http://api.netflix.com/catalog/titles/movies/70111470",
-          "rating": 4.0,
-          "bookmark": []
-        },
-        {
-          "id": 654356453,
-          "title": "Bad Boys",
-          "boxarts": [
-            { width: 200, height:200, url:"http://cdn-0.nflximg.com/images/2891/BadBoys200.jpg" },
-            { width: 140, height:200, url:"http://cdn-0.nflximg.com/images/2891/BadBoys140.jpg" }
-
-          ],
-          "url": "http://api.netflix.com/catalog/titles/movies/70111470",
-          "rating": 5.0,
-          "bookmark": [{ id:432534, time:65876586 }]
-        }
-      ]
+      "id": 70111470,
+      "title": "Die Hard",
+      "boxarts": [
+      { width: 150, height:200, url:"http://cdn-0.nflximg.com/images/2891/DieHard150.jpg" },
+      { width: 200, height:200, url:"http://cdn-0.nflximg.com/images/2891/DieHard200.jpg" }
+      ],
+      "url": "http://api.netflix.com/catalog/titles/movies/70111470",
+      "rating": 4.0,
+      "bookmark": []
     },
     {
-      name: "Thrillers",
-      videos: [
-        {
-          "id": 65432445,
-          "title": "The Chamber",
-          "boxarts": [
-            { width: 130, height:200, url:"http://cdn-0.nflximg.com/images/2891/TheChamber130.jpg" },
-            { width: 200, height:200, url:"http://cdn-0.nflximg.com/images/2891/TheChamber200.jpg" }
-          ],
-          "url": "http://api.netflix.com/catalog/titles/movies/70111470",
-          "rating": 4.0,
-          "bookmark": []
-        },
-        {
-          "id": 675465,
-          "title": "Fracture",
-          "boxarts": [
-            { width: 200, height:200, url:"http://cdn-0.nflximg.com/images/2891/Fracture200.jpg" },
-            { width: 120, height:200, url:"http://cdn-0.nflximg.com/images/2891/Fracture120.jpg" },
-            { width: 300, height:200, url:"http://cdn-0.nflximg.com/images/2891/Fracture300.jpg" }
-          ],
-          "url": "http://api.netflix.com/catalog/titles/movies/70111470",
-          "rating": 5.0,
-          "bookmark": [{ id:432534, time:65876586 }]
-        }
-      ]
+      "id": 654356453,
+      "title": "Bad Boys",
+      "boxarts": [
+      { width: 200, height:200, url:"http://cdn-0.nflximg.com/images/2891/BadBoys200.jpg" },
+      { width: 140, height:200, url:"http://cdn-0.nflximg.com/images/2891/BadBoys140.jpg" }
+
+      ],
+      "url": "http://api.netflix.com/catalog/titles/movies/70111470",
+      "rating": 5.0,
+      "bookmark": [{ id:432534, time:65876586 }]
     }
+    ]
+  },
+  {
+    name: "Thrillers",
+    videos: [
+    {
+      "id": 65432445,
+      "title": "The Chamber",
+      "boxarts": [
+      { width: 130, height:200, url:"http://cdn-0.nflximg.com/images/2891/TheChamber130.jpg" },
+      { width: 200, height:200, url:"http://cdn-0.nflximg.com/images/2891/TheChamber200.jpg" }
+      ],
+      "url": "http://api.netflix.com/catalog/titles/movies/70111470",
+      "rating": 4.0,
+      "bookmark": []
+    },
+    {
+      "id": 675465,
+      "title": "Fracture",
+      "boxarts": [
+      { width: 200, height:200, url:"http://cdn-0.nflximg.com/images/2891/Fracture200.jpg" },
+      { width: 120, height:200, url:"http://cdn-0.nflximg.com/images/2891/Fracture120.jpg" },
+      { width: 300, height:200, url:"http://cdn-0.nflximg.com/images/2891/Fracture300.jpg" }
+      ],
+      "url": "http://api.netflix.com/catalog/titles/movies/70111470",
+      "rating": 5.0,
+      "bookmark": [{ id:432534, time:65876586 }]
+    }
+    ]
+  }
   ];
 
 
@@ -984,7 +984,7 @@ function() {
   //   {"id": 70111470,"title": "Die Hard","boxart":"http://cdn-0.nflximg.com/images/2891/DieHard150.jpg" }
   // ];
 
-return movieLists.concatMap(function(movieList) {
+  return movieLists.concatMap(function(movieList) {
     return movieList.videos.concatMap(function(movies) {
       return movies.boxarts.reduce(function(accumulator, currentElem) {
         if (accumulator.width * accumulator.height < currentElem.width * currentElem.height) {
@@ -1012,40 +1012,40 @@ Use a for loop to traverse the videos and bookmarks array at the same time. For 
 
 function() {
   var videos = [
-      {
-        "id": 70111470,
-        "title": "Die Hard",
-        "boxart": "http://cdn-0.nflximg.com/images/2891/DieHard.jpg",
-        "uri": "http://api.netflix.com/catalog/titles/movies/70111470",
-        "rating": 4.0,
-      },
-      {
-        "id": 654356453,
-        "title": "Bad Boys",
-        "boxart": "http://cdn-0.nflximg.com/images/2891/BadBoys.jpg",
-        "uri": "http://api.netflix.com/catalog/titles/movies/70111470",
-        "rating": 5.0,
-      },
-      {
-        "id": 65432445,
-        "title": "The Chamber",
-        "boxart": "http://cdn-0.nflximg.com/images/2891/TheChamber.jpg",
-        "uri": "http://api.netflix.com/catalog/titles/movies/70111470",
-        "rating": 4.0,
-      },
-      {
-        "id": 675465,
-        "title": "Fracture",
-        "boxart": "http://cdn-0.nflximg.com/images/2891/Fracture.jpg",
-        "uri": "http://api.netflix.com/catalog/titles/movies/70111470",
-        "rating": 5.0,
-      }
-    ],
-    bookmarks = [
-      {id: 470, time: 23432},
-      {id: 453, time: 234324},
-      {id: 445, time: 987834}
-    ],
+  {
+    "id": 70111470,
+    "title": "Die Hard",
+    "boxart": "http://cdn-0.nflximg.com/images/2891/DieHard.jpg",
+    "uri": "http://api.netflix.com/catalog/titles/movies/70111470",
+    "rating": 4.0,
+  },
+  {
+    "id": 654356453,
+    "title": "Bad Boys",
+    "boxart": "http://cdn-0.nflximg.com/images/2891/BadBoys.jpg",
+    "uri": "http://api.netflix.com/catalog/titles/movies/70111470",
+    "rating": 5.0,
+  },
+  {
+    "id": 65432445,
+    "title": "The Chamber",
+    "boxart": "http://cdn-0.nflximg.com/images/2891/TheChamber.jpg",
+    "uri": "http://api.netflix.com/catalog/titles/movies/70111470",
+    "rating": 4.0,
+  },
+  {
+    "id": 675465,
+    "title": "Fracture",
+    "boxart": "http://cdn-0.nflximg.com/images/2891/Fracture.jpg",
+    "uri": "http://api.netflix.com/catalog/titles/movies/70111470",
+    "rating": 5.0,
+  }
+  ],
+  bookmarks = [
+  {id: 470, time: 23432},
+  {id: 453, time: 234324},
+  {id: 445, time: 987834}
+  ],
   counter,
   videoIdAndBookmarkIdPairs = [];
 
@@ -1069,7 +1069,7 @@ Let's add a static zip() function to the Array type. The zip function accepts a 
 
 Array.zip = function(left, right, combinerFunction) {
   var counter,
-    results = [];
+  results = [];
 
   for(counter = 0; counter < Math.min(left.length, right.length); counter++) {
     // Add code here to apply the combinerFunction to the left and right-hand items in the respective arrays
@@ -1081,6 +1081,56 @@ Array.zip = function(left, right, combinerFunction) {
 };
 
 
+/*
+
+Exercise 23: Combine videos and bookmarks by index
+
+Let's repeat exercise 21, but this time lets use your new zip() function. For each video and bookmark pair, create a {videoId, bookmarkId} pair
+
+*/
+
+function() {
+  var videos = [
+  {
+    "id": 70111470,
+    "title": "Die Hard",
+    "boxart": "http://cdn-0.nflximg.com/images/2891/DieHard.jpg",
+    "uri": "http://api.netflix.com/catalog/titles/movies/70111470",
+    "rating": 4.0,
+  },
+  {
+    "id": 654356453,
+    "title": "Bad Boys",
+    "boxart": "http://cdn-0.nflximg.com/images/2891/BadBoys.jpg",
+    "uri": "http://api.netflix.com/catalog/titles/movies/70111470",
+    "rating": 5.0,
+  },
+  {
+    "id": 65432445,
+    "title": "The Chamber",
+    "boxart": "http://cdn-0.nflximg.com/images/2891/TheChamber.jpg",
+    "uri": "http://api.netflix.com/catalog/titles/movies/70111470",
+    "rating": 4.0,
+  },
+  {
+    "id": 675465,
+    "title": "Fracture",
+    "boxart": "http://cdn-0.nflximg.com/images/2891/Fracture.jpg",
+    "uri": "http://api.netflix.com/catalog/titles/movies/70111470",
+    "rating": 5.0,
+  }
+  ],
+  bookmarks = [
+  {id: 470, time: 23432},
+  {id: 453, time: 234324},
+  {id: 445, time: 987834}
+  ];
+
+  return Array.
+  zip(videos, bookmarks, function(left, right) {
+    return  ({videoID: left.id, bookmarkId: right.id});
+  });
+}
 
 
 
